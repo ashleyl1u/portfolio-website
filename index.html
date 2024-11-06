@@ -12,7 +12,7 @@
 </head>
 <body>
   <div id="header-container">
-    <div>
+    <div class="section-logo">
       <button id="logo">
         <span class="section-left">ASHLEY LIU </span>
         <span> / Portfolio</span>
@@ -20,16 +20,426 @@
     </div>
     
     <div class="section-right">
-      <button>Home</button>
+      <button onclick="scrollTo()">Home</button>
       <button>About</button>
+      <button>Skills</button>
       <button>Portfolio</button>
       <button>Contact</button>
     </div>
   </div>
 
 
-  <div id="home-container"></div>
-  <div id="about-container"></div>
+  <div id="home-container">
+    <div class="section-left">
+      <h2>Hi! I'm</h2>
+      <h1>Ashley Liu</h1>
+      <h3>Computer Science & Co-op Student</h3>
+      <button>Contact Me</button>
+    </div>
+
+    <div class="section-right">
+      <img src="./images/avatar.jpg" alt="" id="home-avatar-img">
+    </div>
+  </div>
+
+
+  <div id="about-container">
+    <div class="header">
+      <h1>About Me</h1>
+    </div>
+
+
+    <div class="about-info">
+      <div class="section-left">
+        <img src="./images/about-me-avatar.jpg" alt="">
+      </div>
+
+      <div class="section-right">
+        <div class="section-top">
+          <p>HI! My name's Ashley. I'm a second-year Computer Science student at Toronto Metropolitan University, 
+            aspiring to become a software developer. I'm passionate about building innovative solutions, expanding 
+            my knowledge, and collaborating with my peers and professionals. 
+          </p>
+        </div>
+
+        <div class="cards-container">
+          <div id="education-container" class="card">
+            <h2>Education</h2>
+
+            <div class="indent">
+              <ul>
+                <li>
+                  <h3>School: Toronto Metropolitan University</h3>
+                </li>
+  
+                <li>
+                  <h3>Degree: Computer Science + Co-op Program</h3>
+                </li>
+                <li>
+                  <h3>GPA: 4.21/4.33</h3>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+    
+          <div id="awards-container" class="card">
+            <h2>Awards</h2>
+
+            <div class="indent">
+              <ul>
+                <li>
+                  <h3>Entrance Scholarship (90%+)</h3>
+                </li>
+  
+                <li>
+                  <h3>Dean's List (2023-2023)</h3>
+                </li>
+                <li>
+                  <h3>Renewable Scholarship (90%+)</h3>
+                </li>
+              </ul>
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tech-skills-container">
+    <div class="header">
+      <h1>Technical Skills</h1>
+    </div>
+   
+
+    <div id="tech-cards-container">
+      <div class="card">
+        <h2>Languages</h2>
+        <div class="two-list" >
+          <ul class="no-point">
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>Java</h3>
+                <h4>4 years</h4>
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>Python</h3>
+                <h4>1 years</h4>
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>HTML</h3>
+                <h4>1 years</h4>
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>CSS</h3>
+                <h4>1 years</h4>
+              </div>
+              
+            </li>
+          </ul>
+
+          <ul class="no-point">
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>JavaScript</h3>
+                <h4>1 years</h4>
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>Lisp</h3>
+                <h4>few months</h4>
+              </div>
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>C</h3>
+                <h4>few months</h4>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+
+      <div class="card">
+        <h2>Technologies & Tools</h2>
+        <div class="list" >
+          <ul class="no-point">
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>VSCode</h3>
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>Eclipse</h3>
+              </div>
+              
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>Emacs</h3>
+              </div>
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>Git</h3>
+              </div>
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <div>
+                <h3>GitHub</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Frameworks & Libraries</h2>
+        <div class="list" >
+          <ul class="no-point">
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <h3>um... come back in a few months...</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2>Relevant Coursework</h2>
+        <div>
+          <ul>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <h3>Computer Science I/II (Python & Java)</h3></li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <h3>Object-Oriented Programming</h3>
+            </li>
+            <li>
+              <img src="./images/cards-heart-outline.svg" alt="">
+              <h3> Data Structures & Algorithms</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  <div id="projects-container">
+    <div class="header">
+      <h1>My Projects</h1>
+    </div>
+
+    <div id="projects-card-container">
+
+
+      <div class="card">
+        <div class="section-top">
+          <img src="./images/weather-app-ss.png" alt="">
+
+          <h2>Weather App</h2>
+          <h3>HTML | CSS | JavaScript</h3>
+          <p></p>
+        </div>
+
+        <div class="section-bottom">
+          
+
+          <div class="button-container">
+            <button>Repo Link</button>
+            <button>Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-top">
+          <img src="./images/to-do-list-ss.png" alt="">
+
+          <h2>To-do List</h2>
+          <h3>HTML | CSS | JavaScript</h3>
+          <p></p>
+        </div>
+
+        <div class="section-bottom">
+          
+
+          <div class="button-container">
+            <button onclick="window.open('https://github.com/ashleyl1u/to-do-list', '_blank')">Repo Link</button>
+            <button onclick="window.open('https://ashleyl1u.github.io/to-do-list/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="section-top">
+          <img src="./images/icecream-web-ss.png" alt="">
+
+          <h2>IceCream Website</h2>
+          <h3>HTML | CSS | JavaScript</h3>
+          <p></p>
+        </div>
+
+        <div class="section-bottom">
+          
+
+          <div class="button-container">
+            <button onclick="window.open('https://github.com/ashleyl1u/resturant-page?tab=readme-ov-file', '_blank')">Repo Link</button>
+            <button onclick="window.open('https://ashleyl1u.github.io/resturant-page/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-top">
+          <img src="./images/sign-up-form-ss.png" alt="">
+    
+          <h2>Sign-up Form</h2>
+          <h3>HTML | CSS | JavaScript</h3>
+          <p></p>
+        </div>
+
+        <div class="section-bottom">
+
+          <div class="button-container">
+            <button onclick="window.open('https://github.com/ashleyl1u/sign-up-form', '_blank')">Repo Link</button>
+            <button onclick="window.open('https://ashleyl1u.github.io/sign-up-form/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-top">
+          <img src="./images/tic-tac-toe-ss.png" alt="">
+
+          <h2>Tic-Tac-Toe</h2>
+          <h3>HTML | CSS | JavaScript</h3>
+          <p></p>
+        </div>
+
+        <div class="section-bottom">
+          
+
+          <div class="button-container">
+            <button onclick="window.open('https://github.com/ashleyl1u/tic-tac-toe?tab=readme-ov-file', '_blank')">Repo Link</button>
+            <button onclick="window.open('https://ashleyl1u.github.io/tic-tac-toe/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-top">
+          <img src="./images/paint-ss.png" alt="">
+
+          <h2>Paint!</h2>
+          <h3>HTML | CSS | JavaScript</h3>
+          <p></p>
+        </div>
+
+        <div class="section-bottom">
+          
+
+          <div class="button-container">
+            <button onclick="window.open('https://github.com/ashleyl1u/paint', '_blank')">Repo Link</button>
+            <button onclick="window.open('https://ashleyl1u.github.io/paint/', '_blank')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div id="contact-container">
+    <div class="header">
+      <h1>Contact Me</h1>
+    </div>
+
+    <div class="info-container">
+      <div class="section-left">
+        <div class="box">
+          <img src="./images/email-heart-outline.svg" alt="">
+          <h2>ying4.liu@torontomu.ca</h2>
+        </div>
+        <div class="box">
+          <img src="./images/phone.svg" alt="">
+          <h2>(+1) 647-615-8655</h2>
+        </div>
+      </div>
+
+      <div class="section-right">
+        <form action="">
+          <input type="text" placeholder="Full Name" required>
+          <input type="text" placeholder="Email" required>
+          <textarea name="" id="" placeholder="Write your message here!" rows="10"></textarea>
+          <button>Send</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="footer-container">
+    <div class="contact-links-container">
+      <button>
+        <img src="./images/github-mark.svg" alt="">
+      </button>
+      <button>
+        <img src="./images/icons8-linkedin.svg" alt="">
+      </button>
+    </div>
+
+    <div class="page-links-container">
+      <button>Home</button>
+      <button>About</button>
+      <button>Skills</button>
+      <button>Projects</button>
+      <button>Contact</button>
+    </div>
+    <div>
+      <p>Copyright © 2024 Ashley Liu | All Rights Reserved</p>
+    </div>
+  </div>
   <script src="./main.js"></script>
 </body>
 </html>
