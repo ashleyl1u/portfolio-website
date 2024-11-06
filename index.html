@@ -36,7 +36,9 @@
       <h2>Hi! I'm</h2>
       <h1>Ashley Liu</h1>
       <h3>Computer Science & Co-op Student</h3>
-      <button>Contact Me</button>
+    
+      <a href="#contact-container"><button >Contact Me</button></a>
+      
     </div>
 
     <div class="section-right">
@@ -409,10 +411,11 @@
       </div>
 
       <div class="section-right">
-        <form action="">
-          <input type="text" placeholder="Full Name" required>
-          <input type="text" placeholder="Email" required>
-          <textarea name="" id="" placeholder="Write your message here!" rows="10"></textarea>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="4f4c979a-a281-474b-b396-ccb471c0d818">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="text" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Write your message here!" rows="10"></textarea>
           <button>Send</button>
         </form>
       </div>
