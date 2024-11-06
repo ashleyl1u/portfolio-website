@@ -11,25 +11,26 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div id="header-container">
+  <header id="header-container">
     <div class="section-logo">
-      <button id="logo">
+      <a id="logo">
         <span class="section-left">ASHLEY LIU </span>
         <span> / Portfolio</span>
-      </button>
+      </a>
     </div>
-    
-    <div class="section-right">
-      <button onclick="scrollTo()">Home</button>
-      <button>About</button>
-      <button>Skills</button>
-      <button>Portfolio</button>
-      <button>Contact</button>
-    </div>
-  </div>
+
+    <nav class="section-right">
+      <a href="#home-container" class="active">Home</a>
+      <a href="#about-container">About</a>
+      <a href="#tech-skills-container">Skills</a>
+      <a href="#projects-container">Projects</a>
+      <a href="#contact-container">Contact</a>
+    </nav>
+
+  </header>
 
 
-  <div id="home-container">
+  <section id="home-container">
     <div class="section-left">
       <h2>Hi! I'm</h2>
       <h1>Ashley Liu</h1>
@@ -40,10 +41,10 @@
     <div class="section-right">
       <img src="./images/avatar.jpg" alt="" id="home-avatar-img">
     </div>
-  </div>
+  </section>
 
 
-  <div id="about-container">
+  <section id="about-container">
     <div class="header">
       <h1>About Me</h1>
     </div>
@@ -108,9 +109,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="tech-skills-container">
+  <section id="tech-skills-container">
     <div class="header">
       <h1>Technical Skills</h1>
     </div>
@@ -257,10 +258,10 @@
         </div>
       </div>
     </div>
-    </div>
+    </section>
 
 
-  <div id="projects-container">
+  <section id="projects-container">
     <div class="header">
       <h1>My Projects</h1>
     </div>
@@ -386,10 +387,10 @@
     </div>
 
 
-  </div>
+  </section>
 
 
-  <div id="contact-container">
+  <section id="contact-container">
     <div class="header">
       <h1>Contact Me</h1>
     </div>
@@ -416,26 +417,26 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
 
   <div id="footer-container">
     <div class="contact-links-container">
-      <button>
+      <button onclick="window.open('https://github.com/ashleyl1u', '_blank')">
         <img src="./images/github-mark.svg" alt="">
       </button>
-      <button>
+      <button onclick="window.open('https://www.linkedin.com/in/ashleyl1u/', '_blank')">
         <img src="./images/icons8-linkedin.svg" alt="">
       </button>
     </div>
 
-    <div class="page-links-container">
-      <button>Home</button>
-      <button>About</button>
-      <button>Skills</button>
-      <button>Projects</button>
-      <button>Contact</button>
-    </div>
+    <nav class="page-links-container">
+      <a href="#home-container">Home</a>
+      <a href="#about-container">About</a>
+      <a href="#tech-skills-container">Skills</a>
+      <a href="#projects-container">Projects</a>
+      <a href="#contact-container">Contact</a>
+    </nav>
     <div>
       <p>Copyright © 2024 Ashley Liu | All Rights Reserved</p>
     </div>
